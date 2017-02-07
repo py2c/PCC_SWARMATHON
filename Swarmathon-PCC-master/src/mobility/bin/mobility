@@ -1,0 +1,9 @@
+#! /usr/bin/env python
+import mobility
+from sys import argv
+
+if __name__ == '__main__':
+    try:
+        mobility.main(argv)
+    except rospy.ROSInterruptException:
+        pass
